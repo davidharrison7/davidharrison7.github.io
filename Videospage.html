@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Voices of the Hill</title>
+
+	<link rel="stylesheet" media="screen" href="voicesstylesheet.css">
+    <style>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">}
+        <link href="https://fonts.googleapis.com/css?family=Palanquin:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+    </style>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="David Harrison">
+	<meta name="description" content="A series of monologues from the tufts community.">
+	<meta name="voices" content="all">
+
+</head>
+
+<body>
+
+    <div class="globalheader">
+        
+        <a href="index.html">
+        <img class="logo" src="headerlogo.png" width="80" height="50">
+        </a>
+        
+        <ul class="navigation-menu">
+            <li><a href="VoicesStories.html">Voices</a></li>
+            <li><a id="voices-page" href="Videospage.html">Videos</a></li>
+            <li><a href="Submissions.html">Submissions</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+        
+        <img class="search" src="search.png" width="40" height="40">
+        
+    </div>
+    
+    <div class="voices">
+        <h2 class="all-videos">Videos</h2>
+        <div class="videoheader">
+            <h3 class="video-title">Being International on an American Campus</h3>
+            <h3 class="video-title2">4/21/17</h3>
+        </div>
+        <div class="featured-videos">
+                <div id="slideshow">
+                <img id="arrow" src="arrow.png" width="60" height="84" onclick="changeVideo()">
+                </div>
+                <iframe id="main-video" width="560" height="315" src="https://www.youtube.com/embed/pqBnAgPv0pY" frameborder="0" allowfullscreen></iframe>
+                <div id="slideshow">
+                <img id="arrow2" src="arrow.png" width="60" height="84" onclick="changeVideo2()">
+                </div>
+        </div>
+    </div>
+    
+<script>
+    var videos = ["https://www.youtube.com/embed/pqBnAgPv0pY",
+                  "https://www.youtube.com/embed/iADTpgRXYrk", "https://www.youtube.com/embed/tuHYZdf-ad0", "https://www.youtube.com/embed/fYNbp6lLl3k", "https://www.youtube.com/embed/FKbpLDdw4KU"];
+
+    function changeVideo(dir) {
+        var video = document.getElementById("main-video");
+        if (videos.indexOf(video.src) == '1'){
+            
+        }
+        video.src = videos[videos.indexOf(video.src) + (dir || 1)] || videos[dir ? videos.length - 1 : 0];
+        
+    }
+     function changeVideo2(dir) {
+        var video = document.getElementById("main-video");
+        video.src = videos[videos.indexOf(video.src) + (-1 || 1)] || videos[-1 ? videos.length - 1 : 0];
+    }
+    
+    document.onkeydown = function(e) {
+        e = e || window.event;
+        if (e.keyCode == '37') {
+            changeVideo(-1) //left <- show Prev image
+        } else if (e.keyCode == '39') {
+            // right -> show next image
+            changeVideo()
+        }
+    }
+</script>
+    
+    <div class="picker">
+            <img class="scroll" id="scroll1" src="scrollopen.png" width="20" height="20">
+            <img class="scroll" id="scroll2" src="scrollclosed.png" width="20" height="20">
+            <img class="scroll" src="scrollopen.png" width="20" height="20">
+            <img class="scroll" src="scrollopen.png" width="20" height="20">
+            <img class="scroll" src="scrollopen.png" width="20" height="20">
+    </div>
+    <div class="line"></div>
+    <div class="row">
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/pqBnAgPv0pY" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Being International on an American Campus</h3>
+                <h4 class="voice-author">Liren Fu</h4>
+                </a>
+            </div>
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/2r3KCpxnbCw" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Monologue</h3>
+                <h4 class="voice-author">Anonymous</h4>
+                </a>
+            </div> 
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/uDmSZX_zVuQ" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">What Greek Life Means to Me</h3>
+                <h4 class="voice-author">Anonymous</h4>
+                </a>
+            </div>
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/gkjW9PZBRfk" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Finding Home</h3>
+                <h4 class="voice-author">Ben Tyson</h4>
+                </a>
+            </div>
+    </div>
+    <div class="row">
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/2r3KCpxnbCw" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Monologue</h3>
+                <h4 class="voice-author">Anonymous</h4>
+                </a>
+            </div> 
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/uDmSZX_zVuQ" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">What Greek Life Means to Me</h3>
+                <h4 class="voice-author">Anonymous</h4>
+                </a>
+            </div>
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/pqBnAgPv0pY" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Being International on an American Campus</h3>
+                <h4 class="voice-author">Liren Fu</h4>
+                </a>
+            </div>
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/gkjW9PZBRfk" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Finding Home</h3>
+                <h4 class="voice-author">Ben Tyson</h4>
+                </a>
+            </div>
+    </div>
+    <div class="row">
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/2r3KCpxnbCw" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Monologue</h3>
+                <h4 class="voice-author">Anonymous</h4>
+                </a>
+            </div> 
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/pqBnAgPv0pY" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Being International on an American Campus</h3>
+                <h4 class="voice-author">Liren Fu</h4>
+                </a>
+            </div>
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/uDmSZX_zVuQ" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">What Greek Life Means to Me</h3>
+                <h4 class="voice-author">Anonymous</h4>
+                </a>
+            </div>
+            <div class="col-1">
+                <iframe class="main-video2" src="https://www.youtube.com/embed/gkjW9PZBRfk" frameborder="0" allowfullscreen></iframe>
+                <a href="Indstory.html">
+                <h3 class="voice-title">Finding Home</h3>
+                <h4 class="voice-author">Ben Tyson</h4>
+                </a>
+            </div>
+        </div>
+    <div class="footer">
+    </div>
+</body>
+</html>
